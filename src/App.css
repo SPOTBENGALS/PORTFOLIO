@@ -1,38 +1,488 @@
-.App {
-  text-align: center;
+/* Header */
+
+.Header {
+  top: 0;
+  transition: all ease-in-out 0.5s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header li {
+  @apply flex text-base px-5 py-2 cursor-pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Header .Logo {
+  @apply relative;
+}
+
+.Header .Logotip {
+  @apply absolute top-2.5 left-1.5 w-2.5 h-2.5 bg-fuchsia-400 rounded-full;
+}
+
+@media screen and (max-width: 1279px) {
+  .Header li {
+    @apply md:py-0 sm:py-0 sm:text-sm;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main */
+
+.Main {
+  height: 700px;
+}
+
+.RefBox {
+  @apply flex absolute justify-between items-center px-0 pt-20 h-full overflow-hidden;
+  z-index: 1;
+  right: -100%;
+  width: 0;
+  height: 700px;
+  transition: linear;
+  transition-property: width, padding-left, padding-right;
+  transition-duration: 800ms;
+}
+
+.RefBox div {
+  display: none;
+  transition-property: opacity;
+  transition: ease-in-out 5s;
+}
+
+.RefBox div:last-of-type {
+  opacity: 0;
+  animation-name: create;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+}
+
+.RefBox div h2 {
+  @apply text-left text-5xl font-bold;
+  opacity: 0;
+  color: rgba(255, 255, 255, 0.3);
+  animation-name: create;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.8s;
+}
+
+.RefBox div h1 {
+  @apply text-left text-5xl mt-3 font-bold;
+  line-height: 60px;
+  opacity: 0;
+  animation-name: create;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.RefBox div h1 strong {
+  @apply flex text-white font-bold;
+}
+
+.RefBox div p {
+  @apply text-left text-xl mt-5 ml-1;
+  opacity: 0;
+  animation-name: create;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.2s;
+}
+
+.RefBox div img {
+  @apply mt-20 rounded-t-full;
+  width: 550px;
+  box-shadow: 20px 20px 0 1px;
+}
+
+@keyframes create {
+  0% {
+    transform: translate(-20px, -20px);
+    opacity: 0;
+  }
+  10% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+.RefBox.widthOn {
+  @apply px-40 lg:px-20 md:px-10 sm:px-2;
+  z-index: 10;
+  right: 0;
+  width: 100%;
+}
+
+.RefBox.zIndexSecond {
+  z-index: 6;
+}
+
+.RefBox.widthOn div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1279px) {
+  .Main {
+    height: 600px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .RefBox {
+    @apply lg:pt-10;
+    height: 600px;
+  }
+
+  .RefBox div h2 {
+    @apply lg:text-4xl;
+  }
+
+  .RefBox div h1 {
+    @apply lg:text-4xl mt-3 lg:mt-2;
+    line-height: 45px;
+  }
+
+  .RefBox div p {
+    @apply lg:text-lg;
+  }
+
+  .RefBox div img {
+    @apply mt-20;
+    width: 400px;
+    box-shadow: 15px 15px 0 1px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .Main {
+    height: 550px;
+  }
+
+  .RefBox {
+    @apply md:pt-14;
+    height: 550px;
+  }
+
+  .RefBox div h2 {
+    @apply md:text-2xl;
+  }
+
+  .RefBox div h1 {
+    @apply md:text-2xl mt-3 md:mt-2;
+    line-height: 32px;
+  }
+
+  .RefBox div p {
+    @apply md:text-base;
+  }
+
+  .RefBox div img {
+    @apply mt-20;
+    width: 400px;
+    box-shadow: 15px 15px 0 1px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Main {
+    height: 580px;
+  }
+
+  .RefBox {
+    @apply sm:flex-col sm:items-start sm:pt-32;
+    height: 580px;
+  }
+
+  .RefBox div {
+    @apply sm:px-6;
+  }
+
+  .RefBox div h2 {
+    @apply sm:text-xl;
+  }
+
+  .RefBox div h1 {
+    @apply sm:text-xl sm:mt-0.5;
+    line-height: 28px;
+  }
+
+  .RefBox div p {
+    @apply sm:text-xs sm:mt-3 sm:ml-0.5;
+  }
+
+  .RefBox div img {
+    @apply sm:mt-5;
+    width: 300px;
+    box-shadow: 15px 15px 0 1px;
+  }
+}
+
+/* InfoBar */
+
+.InfoBar {
+  position: relative;
+  overflow: hidden;
+}
+
+.InfoBar::after,
+.InfoBar::before {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  width: 5px;
+  height: 180px;
+  background-color: white;
+  transform: rotate(45deg) translateY(25%);
+}
+
+.InfoBar::before {
+  width: 3px;
+  right: -10px;
+  transform: rotate(45deg) translate(30%, 30%);
+}
+
+@media screen and (max-width: 767px) {
+  .InfoBar::after,
+  .InfoBar::before {
+    display: none;
+  }
+}
+
+/* Project */
+
+.Title {
+  @apply w-full text-4xl text-left py-5 font-bold md:text-2xl sm:text-2xl;
+}
+
+.Project li {
+  @apply flex justify-center items-center mr-3 mb-3 px-3 py-1 rounded-full cursor-pointer;
+}
+
+.Project li:first-of-type {
+  @apply cursor-default;
+}
+
+.ProjectBox {
+  @apply relative mb-5  rounded-lg overflow-hidden shadow-slate-200 shadow-md;
+  width: 23%;
+  margin-right: 2%;
+  transition: ease-in-out 0.1s;
+}
+
+.ProjectBox:hover {
+  transition: ease-in-out 0.3s;
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 1279px) {
+  .Project {
+    margin-left: 1%;
+  }
+  .ProjectBox {
+    width: 48%;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .Project li {
+    @apply md:text-sm md:mr-4 md:mb-5 sm:text-sm sm:mr-3 sm:mb-3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ProjectBox {
+    @apply mb-5;
+    width: 98%;
+  }
+}
+
+.ProjectBox .ProjectImgBox {
+  @apply relative h-48 overflow-hidden;
+}
+
+.ProjectBox .ProjectImgBox div {
+  @apply flex w-full h-10;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.05));
+}
+
+.ProjectBox .ProjectImgBox img {
+  @apply relative;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.LinkButtons {
+  @apply flex absolute top-40 mt-3 right-1;
+}
+
+.LinkButtons .LinkButton {
+  @apply flex justify-center items-center w-10 h-10 rounded-full mr-3 bg-white border-2 border-white text-2xl drop-shadow cursor-pointer;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.LinkButtons .LinkButton:hover {
+  @apply border-pink-500;
+  transition: all 0.3s;
+  transform: scale(1.3);
+}
+
+.ProjectContents {
+  @apply flex flex-col items-center py-3 bg-white text-left;
+}
+
+.ProjectContents h3,
+.ProjectContents p {
+  @apply w-11/12;
+}
+
+.ProjectContents h3 {
+  @apply text-xl text-slate-950 pb-2;
+}
+
+.ProjectContents p {
+  @apply text-sm text-slate-600;
+}
+
+.ProjectContents .Keyword {
+  @apply flex flex-wrap w-11/12 mt-3;
+}
+
+@media screen and (max-width: 767px) {
+  .ProjectContents h3 {
+    @apply sm:pb-1;
+  }
+}
+
+/* History */
+
+.History .Line {
+  @apply flex relative mt-10 mb-24 p-0.5 w-0 opacity-0 bg-black;
+  transition: ease-in-out 1.3s;
+}
+
+.History.action .Line {
+  @apply w-9/12 opacity-100;
+}
+
+.History .Dot {
+  @apply absolute w-5 h-5 opacity-0 rounded-full;
+  top: -20px;
+  transition: ease-in-out 0.5s;
+}
+
+.History .Dot::after {
+  content: "";
+  @apply flex  w-px h-0 bg-black opacity-0;
+  margin-left: -3px;
+  transform: rotate(135deg);
+  transition: ease-in-out 0.5s;
+  transition-delay: inherit;
+}
+
+.History.action .Dot {
+  @apply opacity-100;
+  top: -8px;
+}
+
+.History.action .Dot::after {
+  @apply ml-10 h-20 opacity-100;
+  transform: rotate(135deg);
+  background-color: inherit;
+}
+
+.History .Dot:nth-child(1) {
+  @apply opacity-100;
+  top: -8px;
+}
+
+.History .Dot:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.History .Dot:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.History .Dot:nth-child(4) {
+  transition-delay: 0.9s;
+}
+
+.History .Dot:nth-child(5) {
+  transition-delay: 1.2s;
+}
+
+.History .Dot p {
+  @apply absolute mt-16 opacity-0 text-lg lg:text-xs w-max;
+  top: -20px;
+  transition: ease-in-out 1.5s;
+}
+
+.History.action .Dot p {
+  @apply opacity-100 ml-20 pt-6 pb-2 border-b-2 border-black;
+  top: -20px;
+  transition: ease-in-out 1.5s;
+}
+
+.History.action .Dot:last-of-type p {
+  @apply ml-16;
+}
+
+@media screen and (max-width: 1023px) {
+  .History .Dot p {
+    @apply mt-16 opacity-0 text-lg md:text-xs;
+    top: -20px;
+    transition: ease-in-out 1.5s;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .History .Line {
+    @apply sm:mt-0 sm:mb-32 sm:p-px;
+  }
+
+  .History.action .Line {
+    @apply w-11/12;
+    transform: rotate(90deg) translate(190px, 175px);
+  }
+
+  .History .Dot {
+    @apply sm:w-4 sm:h-4;
+  }
+
+  .History .Dot::after {
+    @apply sm:w-px sm:h-0;
+    transform: rotate(180deg);
+  }
+
+  .History.action .Dot::after {
+    @apply sm:ml-2 sm:h-20 sm:rotate-90;
+    transform: rotate(180deg) translateY(65px);
+  }
+
+  .History .Dot p {
+    @apply sm:text-xs;
+    top: -20px;
+  }
+
+  .History.action .Dot p {
+    @apply sm:ml-4 sm:pt-0 sm:pb-1 border-b-2 border-black;
+    transform: rotate(-90deg) translate(250px, -85px);
+  }
+
+  .History.action .Dot:nth-child(2) p {
+    transform: rotate(-90deg) translate(235px, -60px);
+  }
+
+  .History.action .Dot:nth-child(3) p {
+    transform: rotate(-90deg) translate(260px, -105px);
+  }
+
+  .History.action .Dot:nth-child(4) p {
+    transform: rotate(-90deg) translate(235px, -140px);
   }
 }
