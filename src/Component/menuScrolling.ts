@@ -26,7 +26,10 @@ export default function menuScrolling(e: React.MouseEvent<HTMLLIElement>) {
     if (e.currentTarget.innerHTML === "Project") {
       window.scrollTo({ top: 580, behavior: "smooth" });
     }
-    if (e.currentTarget.innerHTML === "History" || e.currentTarget.innerHTML === "Contact") {
+    if (e.currentTarget.innerHTML === "History") {
+      window.scrollTo({ top: 1900, behavior: "smooth" });
+    }
+    if (e.currentTarget.innerHTML === "Contact") {
       window.scrollTo({ top: 2100, behavior: "smooth" });
     }
   } else {
@@ -34,10 +37,10 @@ export default function menuScrolling(e: React.MouseEvent<HTMLLIElement>) {
       window.scrollTo({ top: 530, behavior: "smooth" });
     }
     if (e.currentTarget.innerHTML === "History") {
-      window.scrollTo({ top: 3320, behavior: "smooth" });
+      window.scrollTo({ top: 3240, behavior: "smooth" });
     }
     if (e.currentTarget.innerHTML === "Contact") {
-      window.scrollTo({ top: 4000, behavior: "smooth" });
+      window.scrollTo({ top: 3900, behavior: "smooth" });
     }
   }
 }

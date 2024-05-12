@@ -417,9 +417,11 @@
 }
 
 .History .Dot p {
-  @apply absolute mt-16 opacity-0 text-lg lg:text-xs w-max;
+  @apply absolute mt-16 opacity-0 lg:text-sm md:text-xs;
   top: -20px;
   transition: ease-in-out 1.5s;
+  max-width: 1300%;
+  width: 241px;
 }
 
 .History.action .Dot p {
@@ -432,22 +434,30 @@
   @apply ml-16;
 }
 
+.History.action .Dot p.left-2\/4 {
+  margin-left: 4.25rem;
+}
+
+.History.action .Dot p.left-3\/4 {
+  @apply ml-16;
+}
+
 @media screen and (max-width: 1023px) {
   .History .Dot p {
-    @apply mt-16 opacity-0 text-lg md:text-xs;
-    top: -20px;
+    @apply mt-16 opacity-0 text-xs;
+    top: 0px;
     transition: ease-in-out 1.5s;
   }
 }
 
 @media screen and (max-width: 767px) {
   .History .Line {
-    @apply sm:mt-0 sm:mb-32 sm:p-px;
+    @apply sm:mt-0 sm:mb-36 sm:p-px;
   }
 
   .History.action .Line {
-    @apply w-11/12;
-    transform: rotate(90deg) translate(190px, 175px);
+    transform: rotate(90deg) translate(220px, 200px);
+    width: 360px;
   }
 
   .History .Dot {
@@ -460,29 +470,33 @@
   }
 
   .History.action .Dot::after {
-    @apply sm:ml-2 sm:h-20 sm:rotate-90;
-    transform: rotate(180deg) translateY(65px);
+    @apply sm:ml-2 sm:h-10 sm:rotate-90;
+    transform: rotate(180deg) translateY(30px);
   }
 
   .History .Dot p {
-    @apply sm:text-xs;
+    @apply mt-2 sm:text-xs;
     top: -20px;
   }
 
   .History.action .Dot p {
     @apply sm:ml-4 sm:pt-0 sm:pb-1 border-b-2 border-black;
-    transform: rotate(-90deg) translate(250px, -85px);
+    transform: rotate(-90deg) translate(170px, -85px);
   }
 
   .History.action .Dot:nth-child(2) p {
-    transform: rotate(-90deg) translate(235px, -60px);
+    transform: rotate(-90deg) translate(170px, -88px);
   }
 
   .History.action .Dot:nth-child(3) p {
-    transform: rotate(-90deg) translate(260px, -105px);
+    transform: rotate(-90deg) translate(170px, -145px);
   }
 
   .History.action .Dot:nth-child(4) p {
-    transform: rotate(-90deg) translate(235px, -140px);
+    transform: rotate(-90deg) translate(170px, -145px);
+  }
+
+  .History.action .Dot:nth-child(5) p {
+    transform: rotate(-90deg) translate(160px, -155px);
   }
 }

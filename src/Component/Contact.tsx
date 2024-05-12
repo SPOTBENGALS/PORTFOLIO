@@ -20,7 +20,7 @@ function Contact() {
           <div className="flex sm:flex-col justify-between items-baseline sm:items-start my-10 lg:my-5">
             <a
               className="flex items-center mt-auto py-2 border-b-2 text-white hover:text-slate-950 hover:border-slate-950"
-              href="https://open.kakao.com/o/s0PHq6Ef"
+              href="https://github.com/SPOTBENGALS"
               target="blank"
             >
               <BiLogoGithub className="mr-2 text-2xl" />

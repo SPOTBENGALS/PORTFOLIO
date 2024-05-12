@@ -59,11 +59,12 @@ function Main() {
           </h1>
           <p>
             프론트엔드 개발자가 되기 위해 <br /> React, Javascript, TypeScript를 배워온
-            <br /> HTML/CSS 개발 3년 경력의 27세 심지영이라고 합니다.
+            <br /> HTML/CSS 개발 3년 경력의 28세 심지영이라고 합니다.
+            <br /> 현재 SI 업체에서 <b>프론트엔드 개발자 7개월차</b> 근무 중입니다.
           </p>
         </div>
         <div className="flex justify-center px-20 lg:px-10 md:px-8 sm:px-0 sm:w-full sm:flex sm:justify-center">
-          <img className="mr-20 lg:mr-10 md:mr-0 sm:mr-0" src={image01} alt="공부해라" />
+          <img className="mr-20 lg:mr-10 md:mr-0 sm:mr-0" src={image01} alt="upgrade" />
         </div>
       </div>
 
@@ -81,7 +82,7 @@ function Main() {
           </p>
         </div>
         <div className="px-20 lg:px-10 md:px-8 sm:px-0 sm:w-full sm:flex sm:justify-center">
-          <img className="mr-20 lg:mr-10 md:mr-0 sm:mr-0" src={image02} alt="diddid" />
+          <img className="mr-20 lg:mr-10 md:mr-0 sm:mr-0" src={image02} alt="withcoworker" />
         </div>
       </div>
 
@@ -103,7 +104,7 @@ function Main() {
           </p>
         </div>
         <div className="px-20 lg:px-10 md:px-8 sm:px-0 sm:w-full sm:flex sm:justify-center">
-          <img className="mr-20 lg:mr-10 md:mr-0 sm:mr-0" src={image03} alt="dd" />
+          <img className="mr-20 lg:mr-10 md:mr-0 sm:mr-0" src={image03} alt="pileup" />
         </div>
       </div>
     </div>

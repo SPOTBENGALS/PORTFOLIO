@@ -40,14 +40,15 @@ function History() {
           <div className="Line sm:absolute sm:top-0 sm:left-10">
             <div className="Dot left-0 bg-black">
               <p className="left-0">
-                <strong> U.S.A California JS Apparel Inc.</strong>
-                <br /> Graphic Designer 인턴쉽 1년
+                <strong> U.S California JS Apparel Inc.</strong>
+                <br /> Graphic Designer <br />
+                인턴쉽 1년
                 <br />
                 [2016.3 - 2017.2]
               </p>
             </div>
-            <div className="Dot left-1/3 bg-blue-700">
-              <p className="left-1/3 ">
+            <div className="Dot left-1/4 bg-blue-700">
+              <p className="left-1/4 ">
                 그린아카데미 <br />
                 <strong>UX/UI 웹 퍼블리셔 과정 수료</strong>
                 <br />
@@ -56,21 +57,35 @@ function History() {
                 [2018.3 - 2018.9]
               </p>
             </div>
-            <div className="Dot left-2/3 bg-black">
-              <p className="left-1/2 ">
+            <div className="Dot left-2/4 bg-black">
+              <p className="left-2/4 ">
                 <strong>주식회사 레드마우스</strong>
                 <br />
-                UX/UI 디자이너 & 마크업 개발자 3년 6개월
+                UX/UI 디자이너 &
+                <br />
+                마크업 개발자 3년 6개월
                 <br />
                 [2018.12 - 2022.5]
               </p>
             </div>
-            <div className="Dot left-full bg-blue-700">
-              <p className="left-full ml-16">
+            <div className="Dot left-3/4 bg-blue-700">
+              <p className="left-3/4">
                 제로베이스
-                <br /> <strong>프론트엔드 스쿨 4기 부트캠프 수료</strong>
+                <br />{" "}
+                <strong>
+                  프론트엔드 스쿨 4기 <br />
+                  부트캠프 수료
+                </strong>
                 <br />
                 [2022.6 - 2022.12]
+              </p>
+            </div>
+            <div className="Dot left-full bg-blue-700">
+              <p className="left-full">
+                주식회사 제타럭스시스템
+                <br /> <strong>프론트엔드 개발자</strong>
+                <br />
+                [2023.10 - 현재]
               </p>
             </div>
           </div>
