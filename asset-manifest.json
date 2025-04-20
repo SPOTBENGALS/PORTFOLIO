@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PORTFOLIO/static/css/main.723f2854.css",
-    "main.js": "/PORTFOLIO/static/js/main.7ffd1938.js",
+    "main.js": "/PORTFOLIO/static/js/main.884c146f.js",
     "static/js/787.f6e65957.chunk.js": "/PORTFOLIO/static/js/787.f6e65957.chunk.js",
     "static/media/gis_analysis01.jpg": "/PORTFOLIO/static/media/gis_analysis01.8839c5f7996fe4f11618.jpg",
     "static/media/008.png": "/PORTFOLIO/static/media/008.fc015ac223cc3e942ce4.png",
@@ -19,11 +19,11 @@
     "static/media/withcoworker.png": "/PORTFOLIO/static/media/withcoworker.9cae46d709cb2f0bd96d.png",
     "index.html": "/PORTFOLIO/index.html",
     "main.723f2854.css.map": "/PORTFOLIO/static/css/main.723f2854.css.map",
-    "main.7ffd1938.js.map": "/PORTFOLIO/static/js/main.7ffd1938.js.map",
+    "main.884c146f.js.map": "/PORTFOLIO/static/js/main.884c146f.js.map",
     "787.f6e65957.chunk.js.map": "/PORTFOLIO/static/js/787.f6e65957.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.723f2854.css",
-    "static/js/main.7ffd1938.js"
+    "static/js/main.884c146f.js"
   ]
 }
