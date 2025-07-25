@@ -32,8 +32,14 @@ function Project() {
       case "TailwindCSS":
         ClassName += " bg-blue-400";
         break;
-      case "Emotion":
+      case "Styled-Components":
         ClassName += " bg-pink-500";
+        break;
+      case "Zustand":
+        ClassName += " bg-amber-900";
+        break;
+      case "React-Query":
+        ClassName += " bg-red-500";
         break;
       case "SCSS":
         ClassName += " bg-rose-400";
@@ -66,8 +72,14 @@ function Project() {
       case "Babel":
         setProjects(projectData.filter((project) => project.keyword.includes("Babel")));
         break;
-      case "Emotion":
-        setProjects(projectData.filter((project) => project.keyword.includes("Emotion")));
+      case "Styled-Components":
+        setProjects(projectData.filter((project) => project.keyword.includes("Styled-Components")));
+        break;
+      case "Zustand":
+        setProjects(projectData.filter((project) => project.keyword.includes("Zustand")));
+        break;
+      case "React-Query":
+        setProjects(projectData.filter((project) => project.keyword.includes("React-Query")));
         break;
       case "TailwindCSS":
         setProjects(projectData.filter((project) => project.keyword.includes("TailwindCSS")));
@@ -104,8 +116,14 @@ function Project() {
           <li onClick={() => setProjectSort("Babel")} className="bg-yellow-400">
             Babel
           </li>
-          <li onClick={() => setProjectSort("Emotion")} className="bg-pink-500">
-            Emotion
+          <li onClick={() => setProjectSort("Styled-Components")} className="bg-pink-500">
+            Styled-Components
+          </li>
+          <li onClick={() => setProjectSort("Zustand")} className="bg-amber-900">
+            Zustand
+          </li>
+          <li onClick={() => setProjectSort("React-Query")} className="bg-red-500">
+            React-Query
           </li>
           <li onClick={() => setProjectSort("TailwindCSS")} className="bg-blue-400">
             TailwindCSS

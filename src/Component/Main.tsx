@@ -58,9 +58,10 @@ function Main() {
             <strong> 심지영입니다.</strong>
           </h1>
           <p>
-            프론트엔드 개발자가 되기 위해 <br /> React, Javascript, TypeScript를 배워온
-            <br /> HTML/CSS 개발 3년 경력의 28세 심지영이라고 합니다.
-            <br /> 현재 SI 업체에서 <b>프론트엔드 개발자 7개월차</b> 근무 중입니다.
+            React, Javascript, TypeScript와 함께
+            <br />프론트엔드 개발자로서 성장 중입니다.
+            <br /> 디자이너 겸 HTML/CSS 기반 마크업 경력 3년,
+            <br /> 현재 <b>프론트엔드 개발자 2년차로</b> 재직 중에 있습니다.
           </p>
         </div>
         <div className="flex justify-center px-20 lg:px-10 md:px-8 sm:px-0 sm:w-full sm:flex sm:justify-center">
@@ -76,9 +77,10 @@ function Main() {
             <strong>시작했어요.</strong>
           </h1>
           <p>
-            처음 웹 디자이너이자 마크업 개발자로 시작했어요.
-            <br />
-            그래서 마크업 개발을 할 때에도 디자이너와 <b>편안히 소통</b>했어요.
+            커리어의 시작은 웹 디자이너이자 마크업 개발자였습니다. <br />
+            디자인 시스템을 이해하며 코드로 구현하는 데 익숙하고, <br />
+            다양한 팀과 <b>원활한 협업</b>이 가능합니다. <br />
+            어떤 일이든, 아는 만큼 이해하고 더 나은 결과를 만들어냅니다
           </p>
         </div>
         <div className="px-20 lg:px-10 md:px-8 sm:px-0 sm:w-full sm:flex sm:justify-center">
@@ -90,17 +92,13 @@ function Main() {
         <div className="flex flex-col justify-center items-start px-20 lg:px-14 md:px-6  sm:px-0">
           <h2>LET'S MAKE IT MINE</h2>
           <h1>
-            <strong>배우는 것이 즐겁다고 하면</strong>
-            진부할까요?
+            <strong>배움의 즐거움을</strong> 아는 개발자
           </h1>
           <p>
-            모든 개발자들의 단골 멘트인 것 같아요.
-            <br />
-            하지만 이제는 그분들의 마음을 확실히 알아요!
-            <br />
-            배우면 배울수록 더 많은 길을 열고
-            <br />
-            <b>내 것으로 만드는 기쁨</b>은 무엇보다도 성취감이 들죠!
+            “배우는 게 즐겁다”는 말은 흔하지만, <br />
+            저는 그 말의 진짜 의미를 실감하고 있습니다. <br />
+            배움은 저에게 새로운 시야를 열어주고, <br />
+            기능을 <b>직접 구현했을 때의 성취감</b>은 무엇과도 바꿀 수 없습니다. <br />
           </p>
         </div>
         <div className="px-20 lg:px-10 md:px-8 sm:px-0 sm:w-full sm:flex sm:justify-center">

@@ -8,4 +8,5 @@ body {
   @apply scrollbar-hide;
   margin: 0;
   font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "돋움", Dotum, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }

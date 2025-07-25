@@ -11,8 +11,10 @@ function Contact() {
             <h2 className="font-bold">Sim Ji Yeong</h2>
             <p className="mt-5">
               <span className="inline-flex font-light w-24">BIRTH</span>1996.01.11
+              {/* <br /> */}
+              {/* <span className="inline-flex font-light w-24">PHONE</span>010-4130-6301 */}
               <br />
-              <span className="inline-flex font-light w-24">PHONE</span>010-4130-6301
+              <span className="inline-flex font-light w-24">KAKAO</span>simjiyoung0111
               <br />
               <span className="inline-flex font-light w-24">EMAIL</span>wldud455@naver.com
             </p>
