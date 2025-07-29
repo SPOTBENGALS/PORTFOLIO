@@ -2,11 +2,15 @@ import { useEffect, useState } from "react";
 import { PROJECTSDATA } from "../Store/Data";
 import { BiLogoGithub } from "react-icons/bi";
 import { BsGlobe } from "react-icons/bs";
+import { GrDocumentText } from "react-icons/gr";
+import ProjectDetailModal from "./project/ProjectDetailModal";
 
 function Project() {
   const projectData = PROJECTSDATA;
   const [projects, setProjects] = useState(projectData);
   const [projectSort, setProjectSort] = useState("default");
+  const [selectedProject, setSelectProject] = useState("");
+  const [detailModal, setDetailModal] = useState(false);
 
   function switchKeyword(keyword: string) {
     let ClassName = "text-xs text-white mr-1 mb-1 px-2 py-1 rounded-full";
@@ -93,6 +97,11 @@ function Project() {
     }
   }, [projectData, projectSort]);
 
+  const handleSelectProject = (name : string) => {
+    setSelectProject(name);
+    setDetailModal(true);
+  }
+
   return (
     <div className="Project flex items-center justify-center w-full px-2 pt-12 pb-20 md:px-0 md:py-2 sm:pt-0 sm:pb-10 overflow-hidden">
       <div className="flex flex-col justify-between items-start w-10/12 md:w-full sm:w-full px-5 sm:px-2 py-2">
@@ -144,16 +153,21 @@ function Project() {
                   <div></div>
                 </div>
                 <div className="LinkButtons">
-                  {project.githubLink === "" ? (
-                    ""
-                  ) : (
+                  {project.githubLink !== "" && (
                     <a href={project.githubLink} className="LinkButton">
                       <BiLogoGithub />
                     </a>
                   )}
-                  <a href={project.demoLink} className="LinkButton">
-                    <BsGlobe />
-                  </a>
+                  {project.demoLink !== "" && (
+                    <a href={project.demoLink} className="LinkButton">
+                      <BsGlobe />
+                    </a>
+                  )}
+                  {project.demoLink === "" && project.githubLink === "" && (
+                    <button onClick={() => handleSelectProject(project.projectName)} className="LinkButton">
+                      <GrDocumentText />
+                    </button>
+                  )}
                 </div>
                 <div className="ProjectContents">
                   <h3>{project.projectName}</h3>
@@ -175,6 +189,7 @@ function Project() {
           })}
         </div>
       </div>
+      {detailModal && <ProjectDetailModal name={selectedProject} onClose={() => setDetailModal(false)} />}
     </div>
   );
 }

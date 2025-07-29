@@ -31,17 +31,16 @@ function History() {
       <div className="flex flex-col justify-between items-start w-10/12 md:w-full sm:w-full px-5 py-2 ">
         <h1 className="Title">History</h1>
         <p className="text-lg lg:text-base md:text-sm sm:text-sm text-gray-600">
-          항상 흥미를 연료로 하여 추진력이 좋은 편입니다. <br /> 제품 디자인 전공에서 그래픽 디자이너, 웹 디자이너,
-          마크업 개발자, 프론트엔드 개발자까지 끊임없이 발전하고 있으며,
-          <br />
-          언젠가 React를 넘어 Vue, 다양한 라이브러리들까지 앞으로도 계속 도전하고 싶습니다.
+            제품 디자인 전공을 시작으로, 그래픽 디자이너, 웹 디자이너, 마크업 개발자, 
+            그리고 현재는 프론트엔드 개발자로 꾸준히 커리어를 확장해왔습니다. <br />
+            항상 호기심과 몰입을 동력 삼아 새로운 기술과 도전에 능동적으로 임하고자 노력하고 있습니다.
         </p>
         <div className="w-full relative">
           <div className="Line sm:absolute sm:top-0 sm:left-10">
             <div className="Dot left-0 bg-black">
               <p className="left-0">
                 <strong> U.S California JS Apparel Inc.</strong>
-                <br /> Graphic Designer <br />
+                <br /> 그래픽 디자이너 <br />
                 인턴쉽 1년
                 <br />
                 [2016.3 - 2017.2]
@@ -59,11 +58,11 @@ function History() {
             </div>
             <div className="Dot left-2/4 bg-black">
               <p className="left-2/4 ">
-                <strong>주식회사 레드마우스</strong>
+                주식회사 레드마우스
                 <br />
-                UX/UI 디자이너 &
+                <strong>웹 퍼블리셔</strong> 및
                 <br />
-                마크업 개발자 3년 6개월
+                UX/UI 디자이너 3년 6개월
                 <br />
                 [2018.12 - 2022.5]
               </p>

@@ -56,7 +56,7 @@ export const PROJECTSDATA = [
   },
   {
     id: 7,
-    projectName: "LX플랫폼 GIS 분석 시스템",
+    projectName: "공공기관 GIS 분석 시스템",
     descript: "OpenLayers 라이브러리를 활용한 GIS 분석 서비스입니다.",
     image: projectImg07,
     demoLink: "",

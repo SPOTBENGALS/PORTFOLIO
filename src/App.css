@@ -15,6 +15,7 @@
 
 .Header .Logotip {
   @apply absolute top-2.5 left-1.5 w-2.5 h-2.5 bg-fuchsia-400 rounded-full;
+  z-index: 15;
 }
 
 @media screen and (max-width: 1279px) {
@@ -331,6 +332,10 @@
   transform: scale(1.3);
 }
 
+.LinkButtons button.LinkButton {
+  padding : 8px;
+}
+
 .ProjectContents {
   @apply flex flex-col items-center py-3 bg-white text-left;
 }
@@ -499,4 +504,78 @@
   .History.action .Dot:nth-child(5) p {
     transform: rotate(-90deg) translate(160px, -155px);
   }
+}
+
+.dimmed {
+  @apply fixed w-full h-full flex justify-center items-center z-40;
+  top : 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ModalLayout {
+  @apply w-10/12 h-5/6;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.ModalHeader {
+  @apply flex justify-between p-2;
+}
+
+.ModalHeader h2 {
+  @apply p-2;
+  font-size : 21px;
+  font-weight: 500;
+}
+
+.ModalHeader svg {
+  @apply w-10 h-10 p-2;
+  cursor: pointer;
+}
+
+.ModalBody {
+  @apply m-4 mt-0;
+  max-height: calc(100% - 85px);
+  overflow-y: auto;
+}
+
+.ModalBody::-webkit-scrollbar {
+  width: 4px; 
+  height: 4px; 
+}
+
+.ModalBody::-webkit-scrollbar-thumb {
+  background-color: #d1d8db;
+  border-radius: 2px;
+}
+
+.ModalBody::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.ProjectModalContents {
+  @apply flex flex-col;  
+}
+
+.ProjectModalContents h4 {
+  @apply w-full mt-6 mb-3; 
+  color : rgb(63, 63, 155); 
+  font-size : 17px;
+  font-weight: 500;
+}
+
+.ProjectModalContents p {
+  @apply w-full break-keep;  
+  line-height: 23px;
+  font-size : 14px;
+}
+
+.exampleImgs {
+  @apply flex w-full mt-5 flex-wrap;
+  gap : 5px;
+}
+
+.exampleImgs img {
+  height: 160px;
 }
